@@ -122,7 +122,7 @@ ps.setParameter ('SimpleTimeParameterization/maxAcceleration', .5)
 ps.setParameter ('SimpleTimeParameterization/safety', 0.5)
 ps.setParameter ("ManipulationPlanner/extendStep", 0.7)
 
-#ps.solve()
+ps.solve()
 pid = ps.numberPaths () - 1
 if pid >= 0: writeTrajInYaml (ps, pid, '/tmp/traj.yaml', .1)
 
