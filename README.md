@@ -9,4 +9,14 @@ This package provides 2 scripts that generate wholebody motion for Pyrène
 
 ## How to use this package
 
-  Follow the instructions provided in file instructions.
+Follow the instructions provided in file instructions:
+
+  * install hpp via robotpkg,
+  * make sure omniNames is running, otherwise start it,
+  * run hpp-manipulation-server, run the desired python script,
+  * to display the resulting path, run gepetto-gui and follow the instructions
+    commented out at the end of both scripts.
+
+## Output
+
+The resulting motion is sampled at .1 second in /tmp/traj.yaml.
